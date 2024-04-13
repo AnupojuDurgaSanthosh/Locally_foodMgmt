@@ -1,0 +1,15 @@
+<!-- star-rating.component.html -->
+<div class="star-rating">
+    <span
+      class="star"
+      *ngFor="let rating of ratingsArray; let i = index"
+      [ngClass]="{
+        'filled': i < currentRating,
+        'unfilled': i >= currentRating
+      }"
+      (click)="rate(i + 1)"
+    >
+      &#9733; <!-- Unicode character for star -->
+    </span>
+  </div>
+  

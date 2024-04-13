@@ -1,0 +1,33 @@
+<div class="pop-fix">
+    <div class="wave"><h3 style="font-weight: 400;">Sign Up</h3></div>
+        <div mat-dialog-content style="padding-bottom: 0px;">
+            <div fxLayout="column">
+                <div fxFlex="100" style="display: grid;">
+                    <label>Fullname</label>
+                     <input style="height: 56px;border: 1px solid #9e9e9e;border-radius: 5px;">
+                </div> 
+                <div fxFlex="100" style="display: grid;margin:20px 0px">
+                    <label>Email</label>
+                     <input style="height: 56px;border: 1px solid #9e9e9e;border-radius: 5px;">
+                </div> 
+            </div>
+        </div>
+        <div mat-dialog-actions class="closav">
+            <div fxLayout="row" fxLayoutAlign="space-between center" class="w-100"> 
+                <button mat-raised-button  type="submit" class="w-100" style="background-color: #ff9d02;height:50px;font-weight: 400;font-size: 17px;">Create account</button>
+            </div> 
+        </div>
+    
+    <span style="display: flex;justify-content: space-between;align-items: center;padding: 24px;"><hr style="width:45%;"> Or <hr style="width: 45%;"></span>
+    <div class="closav">
+        <div fxLayout="row" fxLayoutAlign="space-between center" class="w-100" style="margin:10px 0px;"> 
+            <button mat-raised-button  type="submit" class="w-100" style="height:50px;font-weight: 400;font-size: 17px;"><mat-icon>google</mat-icon>Sign in with Google</button>
+        </div> 
+    </div>
+    <div style="padding:30px;"><p>Already have an account ?<button style="    border: none;
+        background-color: transparent;
+        margin-left: 10px;
+        color: #ff9d02;
+        font-size: medium;" (click)="login()">Login</button></p></div>
+    
+    </div>

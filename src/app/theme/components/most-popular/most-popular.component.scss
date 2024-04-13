@@ -1,0 +1,19 @@
+.mst-btn{
+border-radius: 50px;
+color:black;
+background-color: #ff9d02;
+outline: none;
+border: none;
+padding: 10px;
+width:100px;
+&:hover{
+    background-color: white;
+    border: 1px solid #ff9d02;
+    color: #ff9d02;
+}
+}
+// .mst-btn :hover{
+//     background-color: white;
+//     border-color: #ff9d02;
+//     color: #ff9d02;
+// }

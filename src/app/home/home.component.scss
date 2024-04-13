@@ -1,0 +1,27 @@
+h1,h2,h3,h4,h5,h6,p{
+    margin:0px;
+    padding:0px;
+}
+.mat-toolbar,.mat-toolbar-row{
+background-color: transparent !important;
+}
+.wid{
+    max-width: 100% !important;
+}
+.home-txt{
+    color: #a7a7a7;
+    font-size: 18px;
+    font-weight: 300;
+}
+.main-txt{
+font-size: 100px;
+}
+@media only screen and (min-width: 300px) and (max-width: 700px){
+  .main-txt{
+    font-size: 50px;
+    text-align: center;
+  }
+  .home-txt{
+text-align: center;
+}
+}

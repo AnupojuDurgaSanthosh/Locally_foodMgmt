@@ -1,0 +1,46 @@
+<div class="pop-fix">
+<div class="wave"><h1 style="font-weight: 400;"><img fxFlex="36" fxFlex.gt-sm="8" fxFlex.sm="40" src="../../../../assets/Group 1.png" style="margin-right:5px;height:40px;">ogin</h1></div>
+<form [formGroup]="form" (ngSubmit)="onSubmit()" autocomplete="off">
+    <div mat-dialog-content style="padding-bottom: 0px;">
+        <div fxLayout="row wrap">
+            <div fxFlex="100">
+                <label>Phone Number</label>
+                <div style="display: flex;">
+                    <mat-form-field appearance="outline" style="width:30%;" class="bord">
+                        <mat-select formControlName="countryCode">
+                          <mat-option value="+91" selected style="display: flex;"><img src="../../../../assets/india.png" width="30" height="30" style="margin-right:5px;">+91 (India)</mat-option>
+                          <mat-option value="+44">+44 (UK)</mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                    <mat-form-field appearance="outline" style="width: 70%;border: none;outline: none;">
+                        <input placeholder="Enter Phone Number" matInput  required >
+                    </mat-form-field>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <div mat-dialog-actions class="closav">
+        <div fxLayout="row" fxLayoutAlign="space-between center" class="w-100"> 
+         <button (click)="onSubmit()" mat-raised-button  type="submit" class="w-100" style="background-color: #ff9d02;height:50px;font-weight: 400;font-size: 17px;">Send One Time Password</button>
+        </div> 
+    </div>
+</form>
+
+<span style="display: flex;justify-content: space-between;align-items: center;padding: 24px;"><hr style="width:45%;"> Or <hr style="width: 45%;"></span>
+<div  class="closav">
+    <div fxLayout="row" fxLayoutAlign="space-between center" class="w-100"> 
+        <button mat-raised-button  type="submit" class="w-100" style="height:50px;font-weight: 400;font-size: 17px;"><mat-icon>email</mat-icon>Continue with Email</button>
+    </div> 
+</div>
+<div class="closav">
+    <div fxLayout="row" fxLayoutAlign="space-between center" class="w-100" style="margin:10px 0px;"> 
+        <button mat-raised-button  type="submit" class="w-100" style="height:50px;font-weight: 400;font-size: 17px;"><mat-icon>google</mat-icon>Sign in with Google</button>
+    </div> 
+</div>
+<div style="padding:30px;"><p>New to Locally ?<button style="    border: none;
+    background-color: transparent;
+    margin-left: 10px;
+    color: #ff9d02;
+    font-size: medium;" (click)="createacc()"> Create Account</button></p></div>
+
+</div>

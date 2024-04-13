@@ -1,1 +1,87 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import '@angular/material/prebuilt-themes/indigo-pink.css'; 
+@import "~@fortawesome/fontawesome-free/css/all.css";
+@import "./app/theme/styles/admin";
+@import "./app/theme/styles/base";
+.w-100{
+    width: 100%;
+}
+.m-0{
+    margin: 0px;
+}
+.p-0{
+    padding:0px;
+}
+.mx-wid{
+    max-width: 100%;
+}
+.home-bgcircle{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: white;
+    z-index: 1; height: 61%; 
+    width: 54%; 
+    border: 1px solid greenyellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home-smcircle-1{
+    position: absolute;
+    top: 30%; left: 97%;
+    transform: translate(-50%, -50%); 
+    border-radius: 50%; 
+    background-color: white; 
+    z-index: 1; 
+    height: 17%; 
+    width: 16%; 
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home-smcircle-2{
+    position: absolute;
+    top: 59%; left: 93%;
+    transform: translate(-50%, -50%); 
+    border-radius: 50%; 
+    background-color: white; 
+    z-index: 1; 
+    height: 13%; 
+    width: 12%;
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home-smcircle-3{
+    position: absolute; 
+    top: 80%; left: 77%; 
+    transform: translate(-50%, -50%); 
+    border-radius: 50%; 
+    background-color: white; 
+    z-index: 1; 
+    height: 8%; 
+    width: 7%; 
+    border: 1px solid purple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home-smcircle-1 img{
+    width:120%
+}
+.home-smcircle-2 img{
+    width: 150%;
+}
+.home-smcircle-3 img{
+    width: 115%;
+}
+.mt-5{
+    margin-top:5px;
+}
